@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Total Automotive Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#16499A',
+              primaryDark: '#0e3372',
+              secondary: '#8BC34A',
+              secondaryDark: '#6da134',
+              dark: '#0a2e6b',
+              light: '#f8fafd',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
+            },
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+              'glow': '0 0 15px rgba(22, 73, 154, 0.15)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafd;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+      }
+      /* Modern Geometric Shapes */
+      .clip-diagonal-hero {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      }
+      @media (min-width: 768px) {
+        .clip-diagonal-hero {
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+      }
+      .clip-triangle-bottom {
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+      }
+      .clip-slant-right {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+      }
+      /* Animations */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
